@@ -1,0 +1,44 @@
+.slider-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.slider img {
+  max-width: 100%;
+  display: block;
+}
+
+.slider-buttons {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-505);
+  display: flex;
+  justify-content: space-between;
+}
+.slider-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.slider-button:hover {
+  background-color: #555;
+}
+.prev {
+  margin-left: 10px;
+}
+.next {
+  margin-right: 10px;
+}

@@ -1,0 +1,40 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(400px * 4); /* adjust based on number of slided */
+  animation: slide 10s infinite;
+}
+
+.slide {
+  min-width: 400px;
+  transition: transform 0.5s ease-in-out;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-400px);
+  }
+  50% {
+    transform: translate(-800px);
+  }
+  75% {
+    transform: translate(-1200px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
